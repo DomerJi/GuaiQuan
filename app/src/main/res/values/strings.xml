@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">怪圈</string>
+
+    <string name="title_home">首页</string>
+    <string name="title_nearby">附近</string>
+    <string name="title_amuse">娱乐</string>
+    <string name="title_message">消息</string>
+    <string name="title_my">我的</string>
+    <string name="title_personal">个人中心</string>
+
+</resources>

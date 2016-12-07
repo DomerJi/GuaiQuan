@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fd.gq.MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="@dimen/nav_actionbar_height"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:id="@+id/home_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/home_city_click"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity_margin">
+
+                <TextView
+                    android:id="@+id/home_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="北京"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:drawablePadding="@dimen/actiivty_margin_small"/>
+
+                <ImageView
+                    android:layout_toRightOf="@id/home_city"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/actiivty_margin_small"
+                    android:src="@mipmap/triangle"/>
+
+            </RelativeLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/home_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消息"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/activity_margin"/>
+
+            <TextView
+                android:id="@+id/home_search"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/activity_margin"
+                android:drawableLeft="@mipmap/home_search"
+                android:text="关键词搜索服务、人"
+                android:drawablePadding="@dimen/activity_margin"
+                android:textColor="@color/textColorLight"
+                android:background="@drawable/search_backgroud"
+                android:layout_toLeftOf="@id/home_message"
+                android:layout_toRightOf="@id/home_city_click"
+                android:layout_marginLeft="@dimen/activity_margin"
+                android:layout_marginRight="@dimen/activity_margin"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/home_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <RadioGroup
+        android:id="@+id/raidogroup_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_bottombar_height"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/radio1"
+            android:drawableTop="@drawable/bottombar_home_sel"
+            android:text="@string/title_home"
+            style="@style/bottombar"/>
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:drawableTop="@drawable/bottombar_nearby_sel"
+            android:text="@string/title_nearby"
+            style="@style/bottombar"/>
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:drawableTop="@drawable/bottombar_amuse_sel"
+            android:text="@string/title_amuse"
+            style="@style/bottombar"/>
+
+        <RadioButton
+            android:id="@+id/radio4"
+            android:drawableTop="@drawable/bottombar_message_sel"
+            android:text="@string/title_message"
+            style="@style/bottombar"/>
+
+        <RadioButton
+            android:id="@+id/radio5"
+            android:drawableTop="@drawable/bottombar_my_sel"
+            android:text="@string/title_my"
+            style="@style/bottombar"/>
+
+    </RadioGroup>
+    
+    <View
+        style="@style/line_1dp"
+        android:layout_alignTop="@id/raidogroup_bottombar"/>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/home_toolbar"
+        android:layout_above="@id/raidogroup_bottombar">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

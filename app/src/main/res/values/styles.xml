@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarSize">@dimen/nav_actionbar_height</item>
+    </style>
+
+    <style name="MyToast">
+        <item name="android:windowEnterAnimation">@anim/toast_enter</item>
+        <item name="android:windowExitAnimation">@anim/toast_exit</item>
+    </style>
+
+    <!--RadioGroup 样式-->
+    <style name="bottombar">
+        <!-- 内部组件的排列 -->
+        <item name="android:gravity">center_horizontal</item>
+        <!-- 宽度 -->
+        <item name="android:layout_width">0dp</item>
+        <!-- 高度 -->
+        <item name="android:layout_height">fill_parent</item>
+        <!-- 设置RadioButton的原来图片为空 -->
+        <item name="android:button">@null</item>
+        <!-- 与其他组件宽度占相同比重 -->
+        <item name="android:layout_weight">1.0</item>
+        <!-- 底部的空隙 -->
+        <!--<item name="android:paddingBottom">5.0dip</item>-->
+        <!-- 顶部的空隙 -->
+        <item name="android:paddingTop">5.0dip</item>
+        <!--<item name="android:layout_marginTop">8.0dip</item>-->
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@drawable/bottombar_textcolor_sel</item>
+        <!--文字与图片的距离-->
+        <item name="android:drawablePadding">3dp</item>
+    </style>
+
+    <style name="line_1dp">
+        <!-- 宽度 -->
+        <item name="android:layout_width">match_parent</item>
+        <!-- 高度 -->
+        <item name="android:layout_height">@dimen/activity_line_height</item>
+        <!--背景-->
+        <item name="android:background">@color/gray</item>
+    </style>
+    <style name="line_1px">
+        <!-- 宽度 -->
+        <item name="android:layout_width">match_parent</item>
+        <!-- 高度 -->
+        <item name="android:layout_height">@dimen/activity_line_height</item>
+        <!--背景-->
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <!--WebView顶部进度条样式-->
+    <style name="WebViewBar" parent="Base.Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/webview_bar</item>
+        <item name="android:indeterminateDrawable">@drawable/webview_bar</item>
+        <item name="android:minHeight">3dp</item>
+        <item name="android:maxHeight">5dp</item>
+    </style>
+
+</resources>

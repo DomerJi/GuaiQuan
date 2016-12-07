@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.fd.gq.widget.CarouselViewPager
+        android:id="@+id/carouseViewpager"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:bottom_barstyle="rect_line"
+        app:loading_background="@color/gray"
+        app:index_checked_backgroud="@color/colorAccent"
+        app:index_backgroud="@color/colorPrimary"
+        app:index_height="5"
+        app:auto_time="2">
+
+        </com.fd.gq.widget.CarouselViewPager>
+
+    <com.fd.gq.widget.CarouselViewPager
+        android:id="@+id/carouseViewpager1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:bottom_barstyle="number"
+        app:loading_background="@color/colorAccent"
+        app:index_checked_backgroud="@color/colorAccent"
+        app:index_backgroud="@color/colorPrimary"
+        app:index_height="15"
+        app:auto_time="3"
+        app:intdex_text_color="@color/white">
+        </com.fd.gq.widget.CarouselViewPager>
+
+    <com.fd.gq.widget.CarouselViewPager
+        android:id="@+id/carouseViewpager2"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:bottom_barstyle="rect"
+        app:loading_background="@color/colorAccent"
+        app:index_checked_backgroud="@color/colorAccent"
+        app:index_backgroud="@color/colorPrimary"
+        app:index_height="20"
+        app:auto_time="4">
+    </com.fd.gq.widget.CarouselViewPager>
+
+    <com.fd.gq.widget.CarouselViewPager
+        android:id="@+id/carouseViewpager3"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:bottom_barstyle="round"
+        app:loading_background="@color/white"
+        app:index_checked_backgroud="@color/gray"
+        app:index_backgroud="@color/black"
+        app:index_height="50"
+        app:auto_time="5">
+
+    </com.fd.gq.widget.CarouselViewPager>
+
+
+
+</LinearLayout>
